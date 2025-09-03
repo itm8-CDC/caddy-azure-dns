@@ -1,7 +1,6 @@
 FROM caddy:2.10.2-builder AS builder
 
-RUN xcaddy build \
-    --with /github.com/caddy-dns/azure@v0.6.0
+    --with github.com/caddy-dns/azure@v0.6.0
 
 FROM caddy:2.10.2
 
